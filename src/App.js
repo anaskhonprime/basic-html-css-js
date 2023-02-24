@@ -1,10 +1,11 @@
-import './App.css';
+import "./App.css";
+import BasicHTML from "./components/BasicHtml";
 
 function App() {
   return (
-    <div>
-      <h1> Working</h1>      
-    </div>
+    <>
+    <BasicHTML/>
+    </>
   );
 }
 

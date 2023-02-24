@@ -1,0 +1,94 @@
+
+
+/*  24.02.2033  */ 
+
+- HTML => Hypertext Markup Language
+
+
+1. <br> 
+   - Self-closing tag 
+
+2. <hr>
+   - horizontal line, <hr size="3">
+   - default size = 1px
+   - Attribute : [ align, color, size, width, noShade]
+
+3. <ul>
+   - unordered list
+   - <li> List item
+   - <ol> Order List
+     ** <ol> + <li> : default with numbers,
+     ** <ol type="i"> : Set list as i, ii, iii etc..
+     ** <ol start="7"> : Start list as 7, 8, 9 etc..
+
+4. Img Tag Attributes
+   - align
+   - alt( alternative text as browser rendering )
+   - border
+   - crossOrigin
+   
+5. <a> tag 
+   - anchor element as global attributes
+   - href (hyperLink) : Contains URL or a URL Fragment
+   - Open Up a new Browser : <a href="http://" target="_blank">Open New Tab</a>
+   - href can open external & internal links or sections 
+
+
+6. <table> 
+   - table tag represents tabular data
+   - permitted-content: <caption>, <thread>, <tBody>, <tr>, <tFoot>
+   - Attributes : align, bgColor, border, cellPadding, cellSpacing, frame, rules and width
+
+   - tr : table row
+   - th : table header
+   - td : tag defines the standard cells in the table which are displayed as normal-weight, left-aligned text.
+   - tHead: table header   
+   - tBody: table body
+   - tFoot: table foot
+
+
+7.  ** <form> tag
+   - Definition: form tag represents a document section containing interactive controls for submitting and editing information
+   - Attributes: accept-charset, autocomplete, name, rel, action, enType, method, target
+
+   - * autocomplete : indicates whether input elements automatically complete , get off and on values
+   - name : the name of form 
+   - rel : controls what kind of links the form created
+   - action : The Url that processes the form submission. Example: <input type= { "text" , "submit", "image" }
+   - * method : The http method to submit the form with. Allowed method values : {"post", "get", "dialog"}
+   - * target : indicates where to display to response after the form is submitted
+       1. _self(default) : load into the same browser
+       2. _blank : Load into a new unnamed browsing context
+       3. _parent: Load into parent browsing context, if no parent behaves the same as _self
+       4. _top : Load into the top-level browsing context
+   
+     
+8. <label> tag
+   - element that represents a caption for an item in a user interface
+   - can't style label elements because they are simple inline elements.
+   - Don't place a tag, buttons on label tag
+
+
+9. ** <input> Tag
+   - Html element that used to control for web-based forms in order to accept data from the user
+   - types: default type is "text"
+      1. button: A push button with no behavior
+      2. *checkbox : single values : selected or not selected
+      3. color : A control for a specific color
+      4. date :  A control for a specific date, open time picker supports from browser
+      5. dateTime-local: control date and time with no time zone
+      6. *email : A field for editing an email address, looks like "text" but has validation parameters like must included "@"
+      7. file : A control user select a file
+      8. number : A control enter a number
+      9. *password : A single line text field whose value is obscured.
+      10 *radio : A radio button , allowing single value to be selected multiple choices 
+      11. range : Control for entering a number, used in conjunction with "min" and "max" define range of acceptable values for
+      12. search : A single-line text field for entering search strings. may include delete icon
+      13. *submit : A button to submit the form 
+      14. text : as a default value that single-line text field
+      15. time : A control for entering a time value with no time zone
+      16. url: A field for entering a URL 
+
+
+
+        
