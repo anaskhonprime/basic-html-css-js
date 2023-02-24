@@ -1,0 +1,35 @@
+
+- CSS => Cascading Style Sheets
+
+1. Css types 
+   
+   - inline Css : include inline styles of Html tag. 
+      - <h1 style="color: red">Text</h1>
+  
+   - internal Css : internal css places into the head tag with <style> tag and can style all of element included in this page.
+     - <head>
+        ....
+        <style> h1 {color: red;} </style>
+       </head>
+
+    - external css : The external style sheet is generally used when you want to make changes on multiple pages.
+      - <head>
+         <link rel="stylesheet" type="text/css" href="/style.css"/> 
+       </head>
+
+    - By CSS : inline Css > internal Css > external Css
+
+
+
+2. Css Syntax and
+
+   - selector { property : value };
+   - selectors using for class for ".", for id "#"
+   - id > class > element tag
+   - id can use only one time in the page, class can use multiple times
+   - if we use two classes of one element, like <h1 class="heading italic">. As this code h1 tag gets two values of classes that css file
+   - By the way when we use two id values of element, like <h1 id="heading italic" all of id values will deleted and gets default browser style value
+   - ID selectors: ID selectors are the most specific kind of selector
+      
+    
+

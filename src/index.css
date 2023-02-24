@@ -8,3 +8,12 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+
+/* hr {
+    border-style: dotted none none;
+    width: 10%;
+    border-width: 10px;
+    border-color: gray;
+    height: 0;
+} */

@@ -49,7 +49,7 @@ function BasicHTML () {
         </table>
 
         <h3>Form Actions</h3>
-        <form action="/" method="post">
+       {/*  <form action="/" method="post">
           <label> Name: </label>
           <input type="text" name="name" />
           <input type="submit" name="name" />
@@ -61,6 +61,15 @@ function BasicHTML () {
           <input type="radio" name="name" />
           <input type="search" name="name" />
           <input type="time" name="name" />
+        </form> */}
+
+        <form action="/" method="post">
+          <label type="text" name="">Name</label>
+          <input type="text" name="name" /><br/>
+           <label type="email" name="">Email</label>
+          <input type="email" name="name" /><br/>
+          <label>Your Message</label>
+          <textarea name="message" rows="10" cols="50" placeholder="Here Message"></textarea>
         </form>
       </div>
     );
