@@ -86,5 +86,8 @@
       16. url: A field for entering a URL 
 
 
-
+10. <div> tag
+    
+    - The Html element is the generic container for flow content.
+    - Should be used only when no other semantic elements such as article, section or nav elements 
         

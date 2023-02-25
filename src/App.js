@@ -7,7 +7,6 @@ import BasicCss from "./components/BasicCss";
 function App() {
   return (
     <>
-    <BasicHTML/>
     <BasicCss/>
     </>
   );

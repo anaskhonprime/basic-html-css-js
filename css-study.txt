@@ -31,5 +31,77 @@
    - By the way when we use two id values of element, like <h1 id="heading italic" all of id values will deleted and gets default browser style value
    - ID selectors: ID selectors are the most specific kind of selector
       
+
+
+3. By the default browser style values should set body margin to 0;
+
+
+4. Interesting facts about height, width in css, Calculation of Height and Width
+
+   /*****  height  *****/
+
+   - The height Css property specifies the height of an element
+   - If box-sizing is set to border-box it determines the height of the border area
+   
+   - Height Values :
+     1. Length: px, em, vh -> absolute value 
+     2. Percentage: 50%, 75% -> height as percentage
+     3. Keyword: max-content, mint-content, fit-content(20em), auto
+     4. Global values: inherit,initial, revert, unset
+
+     5. Most used common values: px, em, vh and auto
+
+
+   /*****  width   *****/
+
+   - Sets an element's width
+   - By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area.
+   - Width Values :
+     1. Length: px, em -> absolute value 
+     2. Percentage: 50%, 75% -> height as percentage
+     3. Keyword: max-content, mint-content, fit-content(20em), auto
+     4. Global values: inherit,initial, revert, unset
+
+     5. Most used common values: px, em, % and auto
     
 
+    /**** Calculation  ****/
+
+    - By default size such as height and width have same 200px size
+    - When padding is set to 20px, this div height and width will be 240px
+    - When border is set to 10px solid, div height and width will be 260px
+    - When margin is set to 30px , this div height and width will be 320px
+   
+
+
+5. Display
+
+   - Common block elements : p, headers ( h1 to h6), div, list tags ( ul, li, ol), form elements
+   - Common inline elements : span, img, a tags
+   - We can't set width and height with inline elements
+   - Can set the height and width of the block elements
+   - When we choose inline-block, can set inline elements with width and height
+
+   - Different of display : none vs visibility: hidden
+     * when we use display: none of any element, this element will deleted layout and next inline or block element will place instead of none element
+     * By the way visibility: hidden is value that just hidden of element's position, next element can't take o place hidden element
+
+
+
+6. Position
+
+   - Relative position of the element can set top, bottom, left, right values
+   - Relative position is relative to own position not viewport screen
+   - Relative elements doesn't effect to any other elements
+
+   - Absolute position is relative to parent.
+       - There is a simple div element setting relative position, and inside has img element has absolute position.
+       In this situation, element that absolute image place 30px of right, it will become 30px position on right not left of the screen.
+   - Relative position is relative to own position not viewport screen but absolute position is relative to parent element, 
+     when here no parent element it takes body
+
+   - Relative and Absolute positions are pretty good to position of elements
+
+
+
+7. font-size: 100% -> is equal font-size: 16px;   
