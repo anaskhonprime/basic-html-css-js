@@ -2,20 +2,26 @@
 .container {
     position: relative;
     text-align: center;
-    background-color: #E4F9F5;
     font-family: 'Poppins', sans-serif;
 }
 
 .header {
     font-family: 'Sacramento', cursive;
-    color: skyblue;
-    font-size: 90px;
+    color: rgb(27, 81, 103);
+    font-size: 100px;
     margin: 0;
 }
 
+.desc {
+    font-size: 22px;
+    opacity: 70%;
+}
+
 .box-1 {
+    height: 100vh;
     position: relative;
     padding-top: 10%;
+    background-color: #E4F9F5;
 }
 
 .box-2 {
@@ -38,10 +44,95 @@
 
 .top-cloud {
     position: absolute;
-    right: 400px;
+    right: 300px;
     top: 10%;
 }
 
 .bot-cloud {
     position: absolute;
+    left: 250px;
+}
+
+.middle-container {
+    background-color: rgb(254, 250, 255);
+}
+
+.skill-row {
+    width: 50%;
+    margin: 150px auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.skill-image {
+    border-radius: 100%;
+    width: 15%;
+    margin-top: 100px;
+}
+
+.skill-header {
+    font-size: 45px;
+    color: #66bfbf;
+}
+
+.skill-text {
+    font-size: 18px;
+    width: 25%;
+    margin: 50px auto;
+}
+
+.img-1 {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    border-radius: 30px;
+}
+
+.img-2 {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+
+hr {
+    color: #9fe2e2;
+    border-style: dotted none none;
+    border-width: 10px;
+    width: 10%;
+    margin: 150px auto;
+}
+
+.btn {
+    background-color: #66bfbf;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    margin: 100px auto;
+    color: #fff;
+    font-weight: semibold;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: #4acccc;
+}
+
+.bottom-container {
+    background-color: #66bfbf;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 20px;
+}
+
+.bottom-container p {
+    margin: 20px 0;
+    font-weight: semibold;
 }

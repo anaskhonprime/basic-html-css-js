@@ -11,24 +11,28 @@ function BasicCss() {
       <div className="box-1">
         <img className="top-cloud" src={cloud} alt="img" />
         <p className="header">I'm Prime</p>
-        <p>A Software Developer</p>
+        <p className="desc">A Software Developer</p>
         <img className="bot-cloud" src={cloud} alt="img" />
-        <img src={mountain} alt="mountain" />
+        <img className="mountain" src={mountain} alt="mountain" />
       </div>
       <div className="middle-container">
         <div className="profile">
-          <img src={computer} alt="" />
-          <h2>Hello.</h2>
-          <p>
+          <img className="skill-image" src={computer} alt="" />
+          <h2 className="skill-header">Hello.</h2>
+          <p className="skill-text">
             Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna.
             Non auctor, montes nulla distinctio.
           </p>
         </div>
         <hr />
         <div className="skills">
-          <h2>My Skills.</h2>
+          <h2 className="skill-header">My Skills.</h2>
           <div className="skill-row">
-            <img className="" src={computer} alt="" />
+            <img
+              className="img-1"
+              src="https://www.accountingcpd.net/LBR/G20051010163243-949240147/images/courses/C20201217135725-339868872-course.jpg"
+              alt=""
+            />
             <h3>Lorem & Ipsum</h3>
             <p>
               Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
@@ -37,7 +41,11 @@ function BasicCss() {
             </p>
           </div>
           <div className="skill-row">
-            <img className="" src={computer} alt="" />
+            <img
+              className="img-2"
+              src="https://miro.medium.com/max/400/1*9x36DL2ncTegcS6OjEO16A.png"
+              alt=""
+            />
             <h3>Lorem Ipsum Dolor</h3>
             <p>
               Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
@@ -46,11 +54,11 @@ function BasicCss() {
             </p>
           </div>
         </div>
-        <hr />
+        <hr className="hr-2" />
         <div className="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-          <p>
+          <h2 className="skill-header">Get In Touch</h2>
+          <h3 className="desc">Lorem ipsum dolor sit amet, non elit.</h3>
+          <p className="skill-text">
             Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales,
             tellus donec dui, ornare erat.
           </p>
@@ -70,7 +78,7 @@ function BasicCss() {
         <a className="footer-link" href="https://www.appbrewery.co/">
           Website
         </a>
-        <p>© Name Surname.</p>
+        <p>© Prime Simple Website Design</p>
       </div>
     </div>
   );

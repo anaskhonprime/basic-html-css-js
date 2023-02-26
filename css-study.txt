@@ -104,4 +104,8 @@
 
 
 
-7. font-size: 100% -> is equal font-size: 16px;   
+7. font-size: 100% -> is equal font-size: 16px; 
+   - Here is also funny information : font-size => 16px = 100% = 1em, so px just recommended to using than other values   
+
+
+8. When we use width for text elements, need to use margin auto.
