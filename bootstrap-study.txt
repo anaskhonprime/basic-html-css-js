@@ -1,0 +1,30 @@
+1. Bootstrap is super framework for used commonly responsive design
+
+2. Rows and Column is super comfortable to use with
+ 
+   - Row : default value is 100% of screen 
+   - Col : default value is 100% of screen
+   
+   - col-lg: Large Column value as displayed in Large Laptops. col-lg-6(50% of 12), get 50% of screen 
+   - col-md : For laptops
+   - col-sm : For responsive mobile design
+
+
+3. Order the style
+
+   - when we have two css files such as style1.css and style2.css CSS styles are applied in the order they are linked in your HTML code.
+     Unlike CSS and JavaScript, HTML code is executed from top to bottom so the order of your code matters.
+
+
+4. Containers
+
+   - Containers are fundamental building blocks of Bootstrap that contain, padding and align
+   - Most basic layout element and required when using our default grid system.
+
+   - Three different containers:
+     1. .container : sets a max-width at each responsive breakpoint
+     2. .container-fluid : which is width 100% of all breakpoints
+     3. .container-{breakpoint} : which is width 100% until the specified breakpoint
+     
+       - container : { sm, md, lg, xl, xxl, fluid}
+
