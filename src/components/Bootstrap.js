@@ -13,7 +13,6 @@ import {
 import { headerContent, features, pricing, pricingHeader } from "./data.js";
 
 function Bootstrap() {
-
   return (
     <div className="contentBody">
       <nav className="navBar">
@@ -55,48 +54,82 @@ function Bootstrap() {
         </div>
       </section>
 
-      <div className="container-fluid">
-        <section className="row features">
-          {features.map((a, i) => (
-            <div className="col-lg-4" key={i}>
-              <img className="feature-img" src={features[i].url} alt="" />
-              <h3>{features[i].intro}</h3>
-              <p>{features[i].content}</p>
-            </div>
-          ))}
-        </section>
-      </div>
+      <section className="row features">
+        {features.map((a, i) => (
+          <div className="col-lg-4 feature-container" key={i}>
+            <img className="feature-img" src={features[i].url} alt="" />
+            <h3>{features[i].intro}</h3>
+            <p>{features[i].content}</p>
+          </div>
+        ))}
+      </section>
 
-      <section className="">
-        <h2>
-          I no longer have to sniff other dogs for love. I've found the hottest
-          Corgi on TinDog. Woof.
-        </h2>
-        <img src="" alt="dog-profile" />
-        <em>Pebbles, New York</em>
+      <section className="slider">
+        <div
+          id="testimonial-carousel"
+          className="carousel slide"
+          data-ride="false">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <h2>
+                I no longer have to sniff other dogs for love. I've found the
+                hottest Corgi on TinDog. Woof.
+              </h2>
+              <img src={DogImg} alt="dog-profile" />
+              <em>Pebbles, New York</em>
+            </div>
+          </div>
+          <a
+            className="carousel-control-prev"
+            href="#testimonial-carousel"
+            role="button"
+            data-slide="prev">
+            <span className="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            className="carousel-control-next"
+            href="#testimonial-carousel"
+            role="button"
+            data-slide="next">
+            <span className="carousel-control-next-icon"></span>
+          </a>
+        </div>
       </section>
 
       <section id="press">
-        <img src={TechCrunch} alt="tc-logo" />
-        <img src={Twn} alt="tnw-logo" />
-        <img src={BizInsider} alt="biz-insider-logo" />
-        <img src={Mashable} alt="mashable-logo" />
+        <img className="press-logo" src={TechCrunch} alt="tc-logo" />
+        <img className="press-logo" src={Twn} alt="tnw-logo" />
+        <img className="press-logo" src={BizInsider} alt="biz-insider-logo" />
+        <img className="press-logo" src={Mashable} alt="mashable-logo" />
       </section>
 
       <section id="pricing">
-        <h2>{pricingHeader.header}</h2>
-        <p>{pricingHeader.text}</p>
+        <div className="pricing-header">
+          <h2>{pricingHeader.header}</h2>
+          <p>{pricingHeader.text}</p>
+        </div>
 
-        {pricing.map((a, i) => (
-          <div key={i}>
-            <h3>{pricing[i].priceHeader}</h3>
-            <h2>{pricing[i].price}</h2>
-            <p>{pricing[i].service1}</p>
-            <p>{pricing[i].service2}</p>
-            <p>{pricing[i].service3}</p>
-            <button type="button">{pricing[i].signUp}</button>
-          </div>
-        ))}
+        <div className="row">
+          {pricing.map((a, i) => (
+            <div className="col-lg-4 col-md-6" key={i}>
+              <div className="pricing-body">
+                <div className="pricing-title">
+                  <h3>{pricing[i].priceHeader}</h3>
+
+                </div>
+                <div className="pricing-items">
+                  <h2>{pricing[i].price}</h2>
+                  <p>{pricing[i].service1}</p>
+                  <p>{pricing[i].service2}</p>
+                  <p>{pricing[i].service3}</p>
+                </div>
+                <div className="pricing-footer">
+                  <button type="button">{pricing[i].signUp}</button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section id="cta">
