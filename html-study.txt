@@ -91,3 +91,12 @@
     - The Html element is the generic container for flow content.
     - Should be used only when no other semantic elements such as article, section or nav elements 
         
+
+11. z-index 
+
+    - The z-index Css property sets the z-order of positioned element or flex items
+    - Syntax :
+      1. Keyword value : auto
+      2. Integer value : 0, 3 ,289
+      3. Negative integer : -1 , Negative values to lower the priority
+      4. Global values: inherit, inherit, revert, revert-layer, unset;

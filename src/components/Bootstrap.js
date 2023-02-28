@@ -15,16 +15,19 @@ import { headerContent, features, pricing, pricingHeader } from "./data.js";
 function Bootstrap() {
   return (
     <div className="contentBody">
-      <nav className="navBar">
-        <div className="navLogo">
-          <h2>PrimeDogs</h2>
+      <nav className="navBar row">
+        <div className="col-md-4">
+          <div className="navLogo">
+            <h2>PrimeDogs</h2>
+          </div>
         </div>
-        <div className="navItems">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Pricing</a>
-          <a href="#">Download</a>
-          <button>Login</button>
+
+        <div className="col-md-4">
+          <div className="navItems">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Pricing</a>
+          </div>
         </div>
       </nav>
 
@@ -115,7 +118,6 @@ function Bootstrap() {
               <div className="pricing-body">
                 <div className="pricing-title">
                   <h3>{pricing[i].priceHeader}</h3>
-
                 </div>
                 <div className="pricing-items">
                   <h2>{pricing[i].price}</h2>
@@ -132,10 +134,24 @@ function Bootstrap() {
         </div>
       </section>
 
-      <section id="cta">
-        <h3>Find the True Love of Your Dog's Life Today.</h3>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
+      <section className="cta">
+        <h1>Find the True Love of Your Dog's Life Today.</h1>
+        <button className="iphone">
+          <img
+            className="title-image"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/2048px-App_Store_%28iOS%29.svg.png"
+            alt=""
+          />
+          <a href="#">{headerContent[1].get}</a>
+        </button>
+        <button className="android">
+          <img
+            className="title-image"
+            src="https://www.svgrepo.com/download/223032/playstore.svg"
+            alt=""
+          />
+          <a href="#">{headerContent[1].get}</a>
+        </button>
       </section>
 
       <footer id="footer">

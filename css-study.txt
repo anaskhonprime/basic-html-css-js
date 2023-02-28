@@ -109,3 +109,40 @@
 
 
 8. When we use width for text elements, need to use margin auto.
+
+
+9. Media Query 
+
+   - Media Queries allow to apply CSS styles depending on a device's general type.
+   - To conditionally apply styles with the Css @media and @import rules 
+   - How to use: @media <type> <feature>
+   
+   - Targeting media types: print, screen, hover, max-width, color
+     
+
+
+10. Code Refactoring
+
+   - Readability
+   - Modularity
+   - Efficiently
+   - Length
+
+
+11. Multiple Selectors
+
+   - Multiple classes: Group for a while two same classes as one css style. h1, p { color:red} in this case all of h1 and p elements will get a red color
+   - Hierarchical Selectors: Group of id and class elements. #title .slider => in this case title and slider get a same value
+   - Parent and child Selectors: .slider h1 {color: red} in this case h1 as child of slider class gets a red color
+   
+   - Combined Selectors: No space between of two selectors 
+     1. selector1.selector2 {} => h1#title { color: red}, in this case h1 element that inside of title box gets red color
+     2. selector1.#selector {} => p.slider { color: red}, in this case p element that inside of slider gets red color
+
+     3. div.slider : will work no problem but div#title doesn't work
+    
+     4. element .class vs element.class 
+        - element.class such as h1.title will change all h1 elements which have a title 
+
+
+ 

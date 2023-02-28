@@ -215,15 +215,15 @@ body {
 .title {
     background-color: #914b91;
     padding: 3% 10%;
+    z-index: 1;
 }
 
 .title-content h1 {
     font-size: 48px;
-    width: 80%;
-    padding: 50px 0;
     line-height: 1.5;
     color: #fff;
     font-weight: bold;
+    margin: 50px 0;
 }
 
 .iphone {
@@ -289,6 +289,9 @@ body {
 .features {
     text-align: center;
     padding: 7% 10%;
+    z-index: 1;
+    position: relative;
+    background-color: #fff;
 }
 
 .features h3 {
@@ -316,7 +319,6 @@ body {
 
 .slider {
     background-color: #ec7fb4;
-    ;
     padding: 7% 15%;
     text-align: center;
     color: #fff;
@@ -384,4 +386,38 @@ body {
 
 .pricing-body:hover {
     background-color: #f8eff7;
+}
+
+.cta {
+    background-color: #912b86;
+    text-align: center;
+    color: #fff;
+    padding: 7% 15%;
+}
+
+.cta h1 {
+    font-weight: 600;
+    width: 60%;
+    margin: 0px auto 40px;
+    line-height: 1.5;
+    font-size: 3em;
+}
+
+#footer {
+    background-color: #fff;
+    text-align: center;
+    color: #5e1957;
+    padding: 3% 5%;
+    font-weight: 500;
+}
+
+@media (max-width: 1028px) {
+    .title-mainImg {
+        position: static;
+        transform: rotate(0);
+        margin: 50px 0;
+    }
+    .title {
+        text-align: center;
+    }
 }
