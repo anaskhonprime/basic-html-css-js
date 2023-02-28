@@ -145,4 +145,49 @@
         - element.class such as h1.title will change all h1 elements which have a title 
 
 
- 
+12. Last Css Rule change
+
+    - When we use two same styles for one element such as 
+      h1 { color: red; color : yellow}, in this case h1 will change green color.
+      
+    - When we have h1 element with id and class types. By the code 
+    <h1 #id="heading" class="title"> Hello World </h1>, We can change this element with 3 ways.
+
+    1.h1 { color: red; }, most commonly way
+    2. Using class: .title {color : yellow}, class is more specific than h1 element, so this text will changed to yellow when
+    3. Using id : #heading { color : blue;}, id is more higher than class, so text will changed to blue;
+
+    ** Here an interesting example that when we change the queue of h1, class, and id styles nothing changed.
+    ** id > class > h1 element
+    ** When we use combined selectors such as #footer h1 {color : pink}, absolute text will changed to pink, bcz we use id selector as most higher priority.
+
+    ** In fact, By CSS : inline Css > internal Css > external Css , so using inline and internal css styles more higher than id or class external css  selectors
+       <h1 #id="heading" class="title" style="color: orange"> Hello World </h1>
+
+
+
+13. Super Important 3 set of web development
+
+   Color theory
+
+    - 5 Mood Colors       
+      1. Red: Love, energy, intensity
+      2. Yellow: Joy, Intellect, Attention
+      3. Green: Freshness, Safety, Growth
+      4. Blue: Stability, Trust, Serenity
+      5. Purple: Royalty, Wealth, Feminity
+
+    - Combining Colors: Red + Green 
+
+     
+   Typography
+
+    - Types of fonts 
+      1. serif
+      2. sans-serif
+      3. script
+      4. display
+      5. modern
+
+
+   UI / UX : User interface and user experience
