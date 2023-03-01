@@ -1,0 +1,110 @@
+
+1. JavaScript 
+
+   - JavaScript는 웨페이지에서 복잡한 기능을 구현할 수 있도록 하는 객제현 스크린팅 프로그램밍 언어입니다.
+   - 자바스크립트는 동적이며, 타입을 명시할 필요가 없는 인터프리터 언어입니다.
+   - 자바스크립트는 객체 지향형 프로그래밍과 함수형 프로그래밍을 모두 표현할 수 있습니다.
+   
+   - Interpreted Language as JavaScript, Python Ruby
+   - Compiled Languages: Java, C/C++, Swift
+
+
+2. Data Types 
+
+   - JavaScript is a dynamic language with dynamic data types
+   - Primitive values: We refer to values of these types as primitive values.
+   - All Primitive types ( except  null) can be tested by the typeOf operator.
+   - typeOf null returns "object", so one has to use  " === null " to test for null
+   - All primitive types (except null and undefined) have their object wrapper types. However "null" and "undefined" throw a TypeError
+
+   - Data Types: Null, undefined, String, Number, Boolean ,Bigint, Symbol
+   - Null type: The Null type is inhabited be exactly one value : null
+   - Number Type : Values outside the range ±(2-1074 to 21024) are automatically converted
+   
+   ** Here the interesting fact : +0 === -0 -> is true, and (42 / +0) returns Infinity, (42 / -0) returns -Infinity
+   ** NaN : Not a number. In JavaScript, NaN is a number that is not a legal number. The Global NaN property is the same as the Number.
+
+
+3. JavaScript Variables
+
+   - var : The var statement declares a function-scoped or global-scoped variable, optimizing it to a value.
+   - Syntax :
+      1. var name1;
+      2. var name1 = value1, name2 = value2;
+      3. var name1, name2 = value2;
+      4. var a, b = a = 'A'; => a = 'A' and b = 'A' 
+
+
+4. var string.length is defined string length
+   
+   - var a = "Hello, world"
+     console.log(a.length) => returns 12 , "," and " " free spaces also included
+
+
+5. Slice 
+
+   - JavaScript slice function is used to a shallow copy as a new array.
+   - Syntax with simple example as var a = [1, 2, 3, 4, 5];
+     
+     1. slice(): method that copy the string, returns [1,2,3,4,5]
+     2. slice(2) : methods copy the string starting to 2th argument from string length , returns [3,4,5] 
+     3. slice(0,3) : methods copy the string starting to 0 from 3th argument, returns [1,2,3]
+     4. slice(-2) : copy the string starting to end of string argument from last 2 arguments , returns [4,5]
+     5. slice(-6 ~ ) : returns just slice() function, returns [1,2,3,4,5]
+     6. slice(-2,1) : returns [3,4]
+
+     ** When the start point is negative, such as start < 0 , start + string.length is used.
+        - Example: slice(-2), here start point is negative, -2(start) + 5(length of string) = 3
+          slice(-2) = slice(3), expected result is [ 4, 5].
+
+     ** slice(-3) = slice(2)
+
+     ** If start < -array.length, 0 used. slice(-6) here less then -5 so can get slice(0)
+        slice(-6) = slice(0)
+
+     ** start >= array.length , nothing extracted.
+        slice(6) = nothing
+
+     ** If end < 0 , end + array.length is used.
+        slice(1,-1) = slice(1,(5 + (-1))) = slice(1,4)
+
+     ** if end >= array.length, slice(array.length) is used.
+        slice(1,6) = slice(1,4)                  
+
+
+6. toUpperCase() : The toUpperCase() method returns the calling string value converted to uppercase.
+   toLowerCase() : convert text to lever case 
+
+
+
+7. Increment and Decrement
+
+   - var a = 1; Increment 
+     1. a = a + 1 // now a=2
+     2. a++; // now a = 3
+     3. a+=1; // now a = 4
+
+   - var b = 5; Decrement   
+     1. a = a - 1; // now a = 4
+     2. a -- ; // now a = 3
+     3. a=-1 // now a = 2
+
+
+   - Two Samples
+     var a = 3; // a is 3
+     var b = a++; // b equals 3, bcz a =3, a++ defines a = 4 
+     b += 1; // here b is 4
+
+     expected result => a = 4, b = 4 
+
+   
+
+
+8. Function
+
+   - The function object provides a methods for functions. In JavaScript, every function is actually a Function Object  
+   - Each function properties :length , name, prototype         
+
+
+
+

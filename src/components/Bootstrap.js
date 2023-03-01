@@ -6,7 +6,6 @@ import {
   Mashable,
   TechCrunch,
   Twn,
-  LadyImg,
   Iphone6,
 } from "../assets/index.js";
 
@@ -21,16 +20,14 @@ function Bootstrap() {
             <h2>PrimeDogs</h2>
           </div>
         </div>
-
         <div className="col-md-4">
           <div className="navItems">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Pricing</a>
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Pricing</a>
           </div>
         </div>
       </nav>
-
       <section className="row title">
         <div className="col-lg-6 title-content">
           <h1>{headerContent[0].header}</h1>
@@ -41,7 +38,7 @@ function Bootstrap() {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/2048px-App_Store_%28iOS%29.svg.png"
               alt=""
             />
-            <a href="#">{headerContent[1].get}</a>
+            <a href="/">{headerContent[1].get}</a>
           </button>
           <button className="android">
             <img
@@ -49,7 +46,7 @@ function Bootstrap() {
               src="https://www.svgrepo.com/download/223032/playstore.svg"
               alt=""
             />
-            <a href="#">{headerContent[1].get}</a>
+            <a href="/">{headerContent[1].get}</a>
           </button>
         </div>
         <div className="col-lg-6">
@@ -142,7 +139,7 @@ function Bootstrap() {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/2048px-App_Store_%28iOS%29.svg.png"
             alt=""
           />
-          <a href="#">{headerContent[1].get}</a>
+          <a href="/">{headerContent[1].get}</a>
         </button>
         <button className="android">
           <img
@@ -150,7 +147,7 @@ function Bootstrap() {
             src="https://www.svgrepo.com/download/223032/playstore.svg"
             alt=""
           />
-          <a href="#">{headerContent[1].get}</a>
+          <a href="/">{headerContent[1].get}</a>
         </button>
       </section>
 
