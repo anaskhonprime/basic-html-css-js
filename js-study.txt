@@ -103,7 +103,65 @@
 8. Function
 
    - The function object provides a methods for functions. In JavaScript, every function is actually a Function Object  
-   - Each function properties :length , name, prototype         
+   - Each function properties :length , name, prototype 
+
+
+
+9. Math Random 
+ 
+   - Static method returns a floating-point, random number between 0 and 1. 
+   - Getting a random number between two numbers
+
+     function getRandomNumbers(startPoint, endPoint) {
+        return Math.random() * (endPoint - startPoint) + startPoint; 
+     }
+
+     getRandomNumbers(5,200);
+
+   
+   - Getting a random integer between two values
+
+     function getRandomInteger(startPoint, endPoint) {
+
+       startPoint = Math.ceil(startPoint); endPoint = Math.ceil(endPoint);
+      return Math.random() * (endPoint - startPoint) + startPoint; 
+     }
+
+
+
+
+10. Comparators and Equality, Strict equality
+
+   /****  Equality " == "   ****/
+
+
+    - Equality: operator checks whether its two operands are equal, returning a Boolean value. 
+
+    - Object : return " true " only if its two operands are same abject
+    - String : return " true " only if two operands have same characters with same order
+    - Number : return " true " only both if two operands are same. 
+    - Boolean : return " true " only if two operands both true or false
+    - BigInt: return true only if both operands have the same value
+    - Symbol: return true only if both operands reference the same symbol
+
+    ** If one of operands is null or undefined, other must be null or undefined for returned true
+
+
+    ** Super Interesting Samples  : 
+      1. 1 == 1,  true
+      2. 'hello' == 'hello',  true
+      3. '1' == 1, true
+      4. 0 == false,  true
+      5. +0 == -0 , true
+      6. Nan == Nan, is false
+      7. null == null, true
+      8. null == undefined, true
+      9. undefined == undefined, true
+
+
+  
+   /****  Strict equality "==="   ****/
+
 
 
 
