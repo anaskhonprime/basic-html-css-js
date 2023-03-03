@@ -160,7 +160,209 @@
 
 
   
-   /****  Strict equality "==="   ****/
+   /****  Strict Equality "==="   ****/
+
+   
+   - Strict Equality : operator checks whether the two operands are equal, returning a Boolean value
+   - Unlike the equality "==", the strict equality operator always consider operands of different types to be different.
+
+   - Equality vs Strict Equality Samples 
+
+     1. 1 == 1 returns true  vs 1 === 1 also returns true
+     2. 'hello' == 'hello' returns true, also 'hello' === 'hello' also true
+     3. '1' == 1 is true, but '1' === 1 returns false
+     4. 0 == false is true, but '0' === 'false' is exactly false
+
+   - If both operations are null or undefined, returns true
+     null == undefined is true, but null === undefined is false
+
+   - If either operands is NaN, returns false.
+     NaN == NaN, NaN === Nan, returns false
+
+   - +0 === -0 returns true
+
+   - Difference of equality between Strict Equality 
+     
+     Most notable difference of equality vs strict equality is that if the operands are different types
+     the == operator attempts to convert them to the same type before comparing.
+     
+
+
+
+11. *Arrays 
+
+    - Arrays : a net way of strong a list items under a single variable name.
+    - Arrays are generally described as "list-like objects", Basically single objects that contain multiple values stored in a list.
+    - Can mix several data types string, number, object. const array = [1, "Hello", [0,1,2]];
+
+    - Finding the length of a array : using array.length property.
+    - Start with 0, list number called index.
+    - Here interesting fact computers start count with 0;
+
+    - Array inside array called : Multidimensional Array => const array[1, "Hello", [0,1,2]]
+      array[0] = 1 and array[1] is "Hello".
+
+      ** Special Point of Multidimensional arrays two sets of brackets []
+      array[2][0] equal fist value of fist index as 0
+      array[2][1] is 1 and array[2][2] is 2
+
+
+    - Finding the index of items in an array
+      index.of() method takes an item argument or returns "-1" when value not included
+
+      const fruit = ["banana", "apple", "orange", "kiwi"];
+      console.log(fruit.indexOf('banana')) => returns 1
+      console.log(fruit.indexOf('mango')) => returns -1, Not included
+
+
+    - Adding Items in an array
+      Add one or more items to the end of an array we use push();
+
+      ** const num = [1,2,3]; // length = 3
+         num.push(5) // [1,2,3,5], length = 4
+
+    - Adding Items in start of array using unshift();
+      
+      ** const num = [1,2,3];
+         num.unshift(5); // [5,1,2,3]
+
+    
+    - Removing items last item use pop();
+
+      ** const num = [1,2,3,5,70];
+         num.pop(); // [1,2,3,5];
+
+      
+    -  The pop() method returns the deleted item.
+
+      ** const num = [1,2,3,5,70];
+         var deletedItem = num.pop();
+         console.log(deletedItem); // 70
+
+
+    -  To Remove the first item of array use shift();
+
+      ** const num = [1,2,3,4];
+         num.shift(); // [2,3,4];
+
+
+    -  To Remove nth item in array using splice();
+      In this call splice(a,b) => a is as fist argument where to start removing and b shows how many items will delete       
+      
+      ** if(index != -1) => index == -1 means that not included, so index != -1 must include
+
+      ** const num = [1,2,3,4,70,100];
+         const index = num.indexOf(3);
+         if(index != -1){
+            num.splice(index,2)
+            
+            // as splice() method here "index" is 2th as 3 
+            // and "2" means will delete 2 items start 2th index that 3
+            
+         }
+
+         console.log(num); // [1,2,70,100], length is 4
+         
+   
+    - Accessing every item , using for .. of method
+
+      const num = [1,2,70,100];
+
+      for(const getIndex of num){
+         console.log(getIndex); // result get all of index values separately
+      }
+ 
+
+    
+    - map() method
+
+      map() method calls the function once for each item in the array, passing in the item
+      then adds the return value from each function call to a new array and returns the new array.
+
+      function double(num) {  return num * 2 }
+
+      const num = [1,2,3,4,5];
+      const result = num.map(double);
+      console.log(result); // [2,4,6,8,10]
+
+
+    - filter() method
+
+      Using filter() we can create new arrays with conditions below the array.
+      filter() calls for every item in the array, if function is true then add to a new array.
+
+      function isLong(name) { return name.length > 3}
+
+      const arr = ["test", "abc", "apple", "it", "a"];
+      const result = arr.filter(isLong);
+
+      console.log(result);  // ['test', 'apple']         
+
+    
+    - split() method
+
+      The split() method takes a single parameter, the character we want to separate.
+      Also toString() converting an array to string
+
+
+
+
+
+12. While vs For loops
+
+   - While statement creates a loop that execute a specified as long as test condition is true
+
+   ** let x, n = 0;
+     
+      while( n < 3) {
+          n++;
+          x += n; 
+      }
+
+      condition: when n = 0, 0 < 3 is true so x = 0;
+      condition: when n = 1, 1 < 3 is true so x = 1;
+      condition: when n = 2, 2 < 3 is true so x was 1 and x += 2 returns x = 3;
+      condition: when n = 3, n = 3, x = 6;
+
+      final values of n = 2, x = 3 
+
+
+   - For statement creates a loop that consists three expressions: init, condition, after and returns statement
+
+     Using for an with two iterating variables
+
+     ** const arr = [1, 2, 3, 4, 5, 6];
+
+        for( let l = 0, r = arr.length; l < r; l ++, r--){
+         console.log(arr[l], arr[r]);
+
+          result => // 1 6  // 2 5 // 3 4
+
+
+        }   
+
+      
+
+         
+
+      
+
+
+
+
+
+
+     
+
+       
+
+
+          
+
+
+
+
+    
 
 
 
