@@ -341,6 +341,55 @@
 
         }   
 
+
+
+
+
+
+13. Document Object Model
+
+    - The Document Object Model (DOM) connects web pages to script or programming languages by representing the structure of  a document. 
+    - The DOM represents with a logical tree. tree. Each branch of the tree ends in a node, and each node contains objects. 
+    - DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+
+    - document.getElementByTagName("li").length  => get tag
+    - document.getElementByClassName("heading");  => get by class
+    - document.getElementById("heading"); => get by id
+
+    - document.querySelector("heading"); => put tag, class or id
+
+    - document.querySelectorAll("#list .item"); => get all element which inside list id, and need have item class
+
+    - document.querySelector("li a").style.color = "black" => change a tag color to black;
+
+
+
+
+14. Add Event Listener
+
+   - addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is 
+     delivered to target.
+
+   - Common target elements are element or its children, Document, and Window. But the target may be any object the supports events
+
+   -Syntax : 
+
+      ** addEventListener(type, listener)
+      ** addEventListener(type, listener, options) 
+      ** addEventListener(type,listener, useCapture);
+
+   - Parameters:
+
+     ** type: A case-sensitive string representing the event type to listen it 
+     ** listener: the object that receives a notification when an event of the specified type occurs 
+     ** options: An object that specifies the  characteristics about the event listener.
+        The available options are: capture, once, passive, signal
+     ** useCapture : A boolean value indicating whether events of this type will be dispatched to the registered 
+        listener before being dispatched to any EventTarget beneath it in the DOM tree.
+   
+
+
+
       
 
          

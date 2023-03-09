@@ -106,3 +106,6 @@ var resultMe = fibonacciGenerator(10);
 console.log(resultMe);
 
 /*****  Fibonacci Sequence  *******/
+
+
+document.querySelector("iphone").onclick().style.backgroundColor = "red";

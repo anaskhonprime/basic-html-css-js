@@ -30,7 +30,7 @@ function Bootstrap() {
       </nav>
       <section className="row title">
         <div className="col-lg-6 title-content">
-          <h1>{headerContent[0].header}</h1>
+          <h1 className = "intro-title">{headerContent[0].header}</h1>
 
           <button className="iphone">
             <img
@@ -38,7 +38,7 @@ function Bootstrap() {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/2048px-App_Store_%28iOS%29.svg.png"
               alt=""
             />
-            <a href="/">{headerContent[1].get}</a>
+            <a href="">{headerContent[1].get}</a>
           </button>
           <button className="android">
             <img
@@ -46,7 +46,7 @@ function Bootstrap() {
               src="https://www.svgrepo.com/download/223032/playstore.svg"
               alt=""
             />
-            <a href="/">{headerContent[1].get}</a>
+            <a>{headerContent[1].get}</a>
           </button>
         </div>
         <div className="col-lg-6">

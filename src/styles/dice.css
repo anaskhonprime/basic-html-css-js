@@ -1,0 +1,33 @@
+.dice-body {
+    background-color: teal;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 6em;
+    font-family: "Helvetica Neue", ;
+    font-weight: 700;
+}
+
+.dice {
+    display: inline-block;
+    position: relative;
+}
+
+.dice p {
+    font-size: 22px;
+    padding: 50px;
+}
+
+.dice img {
+    width: 70%;
+    padding: 20px;
+}
