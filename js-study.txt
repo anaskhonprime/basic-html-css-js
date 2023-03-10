@@ -386,6 +386,42 @@
         The available options are: capture, once, passive, signal
      ** useCapture : A boolean value indicating whether events of this type will be dispatched to the registered 
         listener before being dispatched to any EventTarget beneath it in the DOM tree.
+
+
+    - Return value : " None ";
+
+
+    ** Example: When Click Button window alert
+
+     - <button class="alert-btn">Click Me</button>
+
+       var result = document.querySelector("alert-btn");
+
+       function click(e) { Window.alert(this.innerHTML); }
+
+       result.addEventListener("click", click);   
+
+
+     
+     - Most useful events
+
+       ** click : Event that clicked button
+       ** mouseover: Event that mouse over button 
+       ** mouseout: Event that mouse out button
+       ** focus : Event that run focus html element
+
+
+     - When There have so many buttons 
+
+       var numberOfButtons = document.querySelectorAll("alert-btn").length;
+
+       for(var i = 0; i < numberOfButtons; i++){
+         document.querySelectorAll("alert-btn")[i].addEventListener("click", function(){
+            alert("You have clicked " + i + " button");
+         } );
+       }
+
+
    
 
 

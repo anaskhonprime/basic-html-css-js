@@ -108,4 +108,19 @@ console.log(resultMe);
 /*****  Fibonacci Sequence  *******/
 
 
-document.querySelector("iphone").onclick().style.backgroundColor = "red";
+
+
+/*****  Button CLick event listener  *******/
+
+
+var numberOfButtons = document.querySelectorAll("alert-btn").length;
+
+for(var b = 0; b < numberOfButtons; b++){
+         document.querySelectorAll("alert-btn")[i].addEventListener("click", function(){
+            alert("You have clicked  the button");
+         } );
+        
+}
+
+
+/*****  Button CLick event listener  *******/
