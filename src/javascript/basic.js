@@ -124,3 +124,38 @@ for(var b = 0; b < numberOfButtons; b++){
 
 
 /*****  Button CLick event listener  *******/
+
+
+
+
+/*****  Simple Calculator *******/
+
+
+function add(num1, num2){
+  return num1 + num2;
+}
+
+function mult(num1, num2) {
+  return num1 * num2;
+}
+
+function divide(num1, num2) {
+  return num1 / num2;
+}
+
+function ayir(num1, num2) {
+  return num1 + num2;
+}
+
+function calculate(num1, num2, option) {
+  return option(num1, num2)
+}
+
+
+calculate(2,3,add); // => 5
+calculate(2,3,mult); // => 6
+
+
+
+
+/*****  Simple Calculator *******/

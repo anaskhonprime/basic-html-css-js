@@ -1,0 +1,87 @@
+
+1.Databases
+
+  - A database is a strong system that collects organized data, to make some works easier like searching, structures and extend
+
+  - (RDBMS) : the relational database management system, SQL
+  - (NoSQL): Not Only SQL
+
+  ** Famous server-side RDBMS is MySQl (MariaDB), SQL Server, oracle Database.
+  ** Famous NoSQL : MongoDB , Cassandra, Redis
+
+  ** SQL : Structured Query Language
+  ** NoSQL : Not Only Sql
+
+     
+
+2. SQL vs NoSQL
+  
+  
+** SQL **
+   
+   - SQL and NoSQL differ in whether they are relational (SQL) or non-relational (NoSQL),
+     schemas are predefined or defined.
+
+   - SQL databases are valuable in handling structured data, or data that has relationships between its variables and entities.
+
+   - SQL database schema organizes data in relational, tabular ways, using tables with columns or attributes and rows of records. 
+
+   - Properties: Atomicity, Consistency, Isolation, Durability
+
+   - Examples of SQL databases : Db2 , MySQL , PostgreSQL , Yugabyte, DBCockroachDB, Oracle Database , Microsoft SQL Server , Azure SQL Database  
+        
+
+
+** NoSQL **  
+
+    - NoSQL systems allow you to work with different data structures within a database.
+
+    - Allow a dynamic schema for unstructured data, there’s less need to pre-plan and pre-organize data, and it’s easier to make modifications.
+
+    - NoSQL databases scale better horizontally, which means one can add additional servers or nodes as needed to increase load.
+    
+    - Structure: Column-oriented, Key-value stores, Document stores, Graph databases
+
+    - Properties: Consistency, Availability, Partition tolerance
+
+    - Examples: Redis, FaunaDB, MongoDB, CouchDB, BigTable, HBase
+
+
+    
+** SQL vs NoSQL **     
+
+    - SQL is a good choice when working with related data. Relational databases are efficient, 
+      flexible and easily accessed by any application.
+
+    - SQL and a relational database make it easy to handle a great deal of information, 
+      scale as necessary and allow flexible access to data — only needing to update data once instead of changing multiple files, for instance. 
+      
+    -  Since each piece of information is stored in a single place, there’s no problem with former versions confusing the picture.
+
+    - Uber, Netflix and Airbnb companies use SQL
+
+
+    - While SQL is valued for ensuring data validity, NoSQL is good when it’s more important that the availability of big data is fast
+
+    -  NoSQL is easy-to-use, flexible and offers high performance.
+
+    - NoSQL is also a good choice when there are large amounts of (or ever-changing) data sets
+    
+    -  For quick access to a key-value store without strong integrity guarantees, Redis may be the best choice. 
+
+    - Unlike with SQL, their built-in sharding and high availability requirements allow horizontal scaling.
+
+   
+    
+    ** MySQL          vs            MongoBD 
+     
+     - More Mature                - Shiny and New
+     - Table Structured           - Document Structured
+     - Requires a Schemas         - More flexible to changes
+     - Great with Relationship    - Not Great with Complex Relationship
+     - Scaler Vertically          - Horizontally Scalable  
+
+
+
+
+3. 

@@ -1,11 +1,11 @@
 import "./App.css";
 
-import Dice from "./components/DiceGame";
+import JQuery from "./components/JQuery";
 
 function App() {
   return (
     <>
-      <Dice />
+      <JQuery />
     </>
   );
 }

@@ -422,11 +422,151 @@
        }
 
 
+
+
+
+15. Higher Order Functions
+
+   ** Higher order functions are functions that can take other functions as inputs
+
+   ** Contractor Functions : specified name of the function needs to be Uppercase
+
+   function WorkerInfo (name, age, experience, languages){
+    this.name = name;
+    this.age = age;
+    this.experience = experience;
+    this.languages = languages;
+    this.code = function () {
+      alert("Coding in process...");
+    }
+   }
+
+  ** Initialize Object
+
+  var worker1 = new WorkerInfo("TOm", 25, 4, ["English", "French"]).
+  worker1.code(); //window alert "Coding in process...";
+
+
+
+
+
+
+16. **JQuery
+
+    - JQuery is a JavaScript library that focused on simplifying DOM manipulation, AJAX calls and Event handling.
+    - jQuery uses a format that $(selector).action() to assign an elements to an event.
+    - To explain it in detail, $(selector) will call jQuery to select selector element(s), and assign it to an event API called .action().
+
+    ** $(document).ready(function() {
+      alert("Hello World.");
+      $("#blackBox").hide();
+    })
+
+
+    ** JavaScript vs JQuery
+
+      document.querySelector("h1")  ===   $("h1")
+
+
+    ** A CDN (Content Delivery Network) is a group of servers spread out over many locations
+
+
+    ** $("h1").css("color", "green"); //in this code heading element will change color green
+
+       document.querySelector("h1").style.color = "green"  ==>   $("h1").css("color", "green"); 
+
+
+    ** addClass() => When here there are so many style properties we just use addClass() method to apply all style properties;
+
+      .item {
+        font-size: 20px; font-weight: bold; line-height:1.5;
+      }   
+
+      - $("h1").addClass("item"); // h1 element will take the class "item" style properties;
+
+      - $("h1").addClass("item header "); // multiple classes to use with space (not comma);
+
+
+
+    ** removeClass() method will remove each style properties of element
+
+      $("h1").removeClass("item"); // h1 element will remove the class "item"  
+
+  
+    
+    ** $("h1").hasClass("item") // check h1 element includes an "item" class, returns boolean;
+
+
+    ** $("h1").text("Hello"); // text() method will change h1 element to "Hello";
+
+       $("h1").html("<em>Italian</em>");  // add strong, italian styled text using "html()";
+
+
+
+    ** Add Event Listeners using JQuery
+
+      - $("h1").click(function(){
+          $("h1").css("color", "red");
+      })    
+
+      // When we click the h1 tag h1 tag color will changed to red;
+
+
+    ** jQuery on();
+
+      $("h1").on("mouseover", function() {
+        $("h1").css("color", "purple");
+      });
+
+      $("h1").on("mouseout", function() {
+        $("h1").css("color", "black");
+      })
+
+
+
+    ** JQuery hide() method
+
+      - $("button").on("click", function() {
+        $("h1").hide();
+      }) 
+
+      - $("h1").show(); // will show hidden h1;
+
+
+    ** JQuery toggle() 
+
+     - $("button").on("click", function() {
+        $("h1").toggle();
+      })    
+
+      // when click button h1 will hidden and clicked again show again
+
+      hide() + show() ==> toggle();
+
+
+
+     ** animate() 
+
+       - $("button").on("click", function() {
+           $("h1").slideUp().slideDown(). animate({opacity:0.5});
+       }) 
+
+
    
 
+17. **EJS
+
+    - EJS simply stands for Embedded JavaScript. It is a simple templating language/engine
+      that lets its user generate HTML with plain JavaScript. It offers an easier way to interpolate strings effectively.
+
+    - Now while there are several templating systems out there with their merits and demerits,
+       personally use EJS because of its simplicity in syntax and logic. It's also very easy to set up.  
+
+    - 
 
 
-      
+
+     
 
          
 
